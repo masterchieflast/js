@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="app.js"></script>
+</head>
+<body>
+<style>
+    input[type = text] {
+        width: 270px;
+    }
+
+    .tex {
+        width: 110px;
+        font-size: 20px;
+    }
+</style>
+<form action="">
+    <label for="">
+        <textarea name="" id="" cols="40" rows="6" placeholder="Факультет информационных технологий"></textarea></label><br/>
+    <label><br/>
+        <input type="text" class="" placeholder="Фамилия"/>
+        <br/>
+        <br/>
+        <input type="text" class="" placeholder="Имя"/><br/>
+    </label><br/>
+    <label>
+        <b class="tex">Специальность</b>
+        <select name="select">
+            <option value="ИСиТ">ИСиТ</option>
+            <option selected value="ПОИТ">ПОИТ</option>
+            <option value="ПОИБМС">ПОИБМС</option>
+            <option value="ДЭВИ">ДЭВИ</option>
+        </select><br><br><br><br><br>
+    </label>
+    <b class="tex">Курс</b><br>
+    <label>
+        <input type="radio" name="course" class="course" value="1"/><b>1</b>
+        <input type="radio" name="course" class="course" value="2"/><b>2</b>
+        <input type="radio" name="course" class="course" value="3"/><b>3</b>
+        <input type="radio" name="course" class="course" value="4"/><b>4</b>
+    </label><br>
+    <b class="tex">Предметы</b><br>
+    <label>
+        <input type="checkbox" name="subject" value="ОИТ" class="subject"/><b>ОИТ</b>
+        <input type="checkbox" name="subject" value="ОАП" class="subject"/><b>ОАП</b>
+        <input type="checkbox" name="subject" value="История" class="subject"/><b>История</b>
+        <input type="checkbox" name="subject" value="Физика" class="subject"/><b>Физика</b>
+        <input type="checkbox" name="subject" value="Математика" class="subject"/><b>Математика</b>
+    </label><br><br>
+    <label>
+        <input type="submit" value="submit"/>
+        <input type="submit" value="reset"/><br><br>
+        <input type="button" value="Напечатать" onclick="task1()"/>
+        <div id="task11"></div>
+    </label>
+</form>
+
+</body>
+</html>

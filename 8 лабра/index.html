@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="app.js"></script>
+</head>
+<body>
+
+<style>
+    body {
+        background: url("wallpaper1.jpg");
+    }
+
+    .key {
+        text-align: center;
+        font-family: Agency FB, serif;
+        color: whitesmoke;
+        font-size: 23px
+    }
+
+    .btn {
+        height: 100px;
+        background: rgba(255, 255, 255, .3);
+        border-color: black;
+        border-style: solid;
+        border-width: 1px;
+        cursor: pointer;
+        width: 20%;
+        border-radius: 7px;
+        font-size: 16px;
+        font-family: helvetica, serif;
+        text-decoration: none;
+        vertical-align: middle;
+    }
+
+    .btn:hover {
+        border-color: black;
+        border-style: solid;
+        border-width: 1px;
+        background: rgba(159, 209, 223, .7);
+    }
+
+    .btn:focus {
+        background: #ddd;
+        border-color: #333;
+        border-style: solid;
+        border-width: 1px;
+    }
+
+    input {
+        margin-top: 50px;
+        margin-bottom: 25px;
+
+    }
+
+    p {
+        height: 135px;
+        background: rgba(255, 255, 255, .3);
+        border-color: black;
+        border-style: solid;
+        border-width: 1px;
+        width: 22%;
+        border-radius: 7px;
+        font-size: 16px;
+        font-family: helvetica, serif;
+        text-decoration: none;
+        vertical-align: middle;
+        margin: 50px auto auto;
+    }
+</style>
+<p onmouseover="logMouseOverColor(this)" onmouseout="logMouseOutColor(this)">
+    Galaxies were initially discovered telescopically and were known as spiral nebulae. Most 18th to 19th century
+</p>
+<p Onclick="logMouseClickSize(this)">
+    Galaxies were initially discovered telescopically and were known as spiral nebulae. Most 18th to 19th century
+</p>
+<p style="width:333px">
+    <img src="img2.jpg" id="Img" alt="" Onclick="MouseClickImg()">
+</p>
+<p style="width:333px" id="Text" onclick="MouseClickText()">
+    Outer space is not completely empty—it is a hard vacuum containing a low density of particles, predominantly a
+    plasma of hydrogen and helium
+</p>
+<p>
+    <img src="img2.jpg" id="Img2" alt="" onmouseover="logMouseOverImg(this)" onmouseout="logMouseOutImg(this)">
+
+</p>
+<p ondblclick="DbClickBorder(this)" onclick="ClickBorder(this)">
+    Galaxies were initially discovered telescopically and were known as spiral nebulae. Most 18th to 19th century
+</p>
+
+</body>
+</html>

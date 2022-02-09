@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>lab04</title>
+    <script src="app.js"></script>
+</head>
+<body>
+<style>
+    body{
+        background: url("wallpaper.jpg");
+    }
+    .key{
+        text-align: center;
+        font-family: Agency FB, serif;
+        color: whitesmoke;
+        font-size: 23px
+    }
+    .btn {
+        height:100px;
+        border-color: #FFFF99;
+        border-style:solid;
+        border-width:1px;
+        background:#c2e254;
+        cursor:pointer;
+        width: 20%;
+        border-radius: 7px;
+        //margin-top:50px;
+        font-size: 15px;
+        font-family: helvetica, serif;
+        text-decoration: none;
+        vertical-align: middle;
+    }
+    .btn:hover {
+        border-color:#FFFF99;
+        border-style:solid;
+        border-width:1px;
+        background:#FFFF99;
+    }
+    .btn:focus {
+        background:#ddd;
+        border-color:#333;
+        border-style:solid;
+        border-width:1px;
+    }
+    .btn:active {
+        background:#ff0000;
+        border-color:#333;
+        border-style:solid;
+        border-width:1px;
+    }
+</style>
+
+<div class="key">
+    <input type="button" value="1 task" class="btn" onclick="task1()" />
+    <div id ="task11"></div>
+    <br>
+    <input type="button" value="2 task" class="btn" onclick="task2()" />
+    <div id ="task22"></div>
+    <br>
+    <input type="button" value="3 task" class="btn" onclick="task3()" />
+    <div id ="task33"></div>
+</div>
+
+</body>
+</html>

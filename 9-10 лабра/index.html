@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        #mybody {
+            background-color: blanchedalmond;
+            font-family: arial;
+        }
+
+        #c1 {
+            width: 400px;
+            height: 400px;
+            border: 3px solid rgb(16, 4, 184);
+        }
+    </style>
+</head>
+<body id="mybody">
+
+<p>Кликните по мячу и тяните, чтобы двигать его.</p>
+<img src="boll.png" style="cursor:pointer; position:absolute;" id="ball">
+<br>
+<img src="pict.gif" id="img" style="width: 300px;height: 200px;">
+<br>
+<img src="img1.jpg" id="myImg" style="position:absolute; top:250px; left:30%;width: 250px; height: 130px;">
+<br>
+<div>
+    <div style="position:absolute; top:600px; left:30px">
+        <form name="fenster">
+            <p>Цвет:</p>
+            <select id='select' name='color'
+                    style="color:rgb(71, 63, 63); border: white 5px solid; margin:10px;">
+                <option id='blue' value="rgb(30, 9, 98)">синий</option>
+                <option id='red' value="rgb(255, 0, 0)">красный</option>
+                <option id='green' value="rgb(0, 255, 64)">зеленый</option>
+                <option id='yellow' value="rgb(238, 255, 0)">желтый</option>
+            </select><br/>
+            <input type="radio" name='s' value='1'/>y=x^2</br>
+            <input type="radio" name='s' value='2'/>y=x^3</br>
+            <input type="radio" name='s' value='3'/>y=sin(x)</br>
+            <input type="radio" name='s' value='4'/>y=cos(x)
+        </form>
+        <input type="button" onclick='save()' value='Нарисовать'
+               style="margin:5px; font-family:arial; background-color:rgb(224, 14, 77); border: 5px rgb(180, 16, 16) solid"/>
+    </div>
+    <canvas id="c1" width="400px" height="400px" style="position:absolute; top:650px; left:200px; margin:5px;"></canvas>
+</div>
+<script src="app.js"></script>
+</body>
+</html>

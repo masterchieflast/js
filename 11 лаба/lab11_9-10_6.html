@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="jquery/jquery.js"></script>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+
+        h1,
+        h2 {
+            text-align: center;
+        }
+
+        #nav{
+            display: flex;
+        }
+
+        .menu-item1, .menu-item2, .menu-item3 {
+            width: 100px;
+            background: #ff7e7e;
+            cursor: pointer;
+            font-size: 20px;
+            padding: 10px;
+            color: #ffffff;
+            text-align: center;
+        }
+
+        .menu-item1 > .submenu1, .menu-item2> .submenu2, .menu-item3 > .submenu3 {
+            transition: 0.3s ease-in-out;
+            display: none;
+            padding: 10px;
+            background: #7cb8b8;
+            position: absolute;
+            cursor: pointer;
+            color: white;
+            width: 100px;
+            margin-left: -10px;
+            margin-top: 10px;
+        }
+    </style>
+</head>
+<body>
+<div id="nav" onmouseover="onmouse(event)">
+    <div class="menu-item1">
+        Меню 1
+        <div class="submenu1">
+            Подменю
+        </div>
+
+    </div>
+    <div class="menu-item2">
+        Меню 2
+        <div class="submenu2">
+            Подменю
+        </div>
+    </div>
+    <div class="menu-item3">
+        Меню 3
+        <div class="submenu3">
+            Подменю
+        </div>
+    </div>
+</div>
+<script src="lab11-9-10_6.js"></script>
+</body>
+</html>
